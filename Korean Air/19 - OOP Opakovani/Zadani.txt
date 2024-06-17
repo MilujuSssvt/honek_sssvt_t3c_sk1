@@ -1,0 +1,26 @@
+Autobazar
+    - Vlastnosti
+        - Jméno: string
+        - Město: string
+        - Nabízené auta (ASOCIACE -> Auto): List<Car> 
+    - Metody
+        - Získat nejdražší auto
+        - Získat auta podle značky (Porsche)
+Auto
+    - Vlastnosti
+        - Model: string
+        - Značka: string
+        - Cena: decimal
+        - Je dostupné?: bool
+Zakaznik
+    - Vlastnosti
+        - Jméno: string
+        - Přijmení: string
+        - Peníze: decimal
+        - Vlastněné auta (ASOCIACE -> Auto): List<Car>
+    - Metody
+        - Zakoupit auto = 
+            přidá do seznamu vlastněných aut
+            označit jako nedostupné
+            odečte peníze zákazníkovi podle ceny            
+        - Získej průměrnou cenu vlastněných aut
